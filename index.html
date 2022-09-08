@@ -9,7 +9,7 @@
     <!-- <a-asset-item id="model" src="models/Hologram_Plane.glb"></a-asset-item> -->
     <a-marker preset="hiro">
         <a-entity 
-        scale="6 6 6" 
+        scale="5 5 5" 
         position="0 1 0" 
         rotation="0 -90 0"
         gltf-model="models/Smart_plate_v5.glb">
@@ -20,7 +20,7 @@
     <!-- define a camera which will move according to the marker position -->
     </a-marker>
 
-    <a-image src="models/Hologram smartplate.png" scale="1 1 1" position="0 1 0"></a-image>
+    <a-image src="models/Hologram smartplate.png" look-at="[gps-camera]" scale="0.1 0.1 0.1" position="0 1 0"></a-image>
     <a-entity camera></a-entity>
   </a-scene>
 </body>
