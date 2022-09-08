@@ -13,8 +13,6 @@
     <!-- ar.js -->
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/master/three.js/build/ar.js"></script>
     <script>THREEx.ArToolkitContext.baseURL = 'https://cdn.rawgit.com/jeromeetienne/AR.js/master/three.js/examples/'</script>
-    <!-- Events Controls library -->
-    <script src="./Library/EventsControls.js"></script>
 
 </head>
  
@@ -150,58 +148,7 @@
         smoothedControls.update(markerRoot)
     })
 
-    //////////////////////////////////////////////////////////////////////////
-    ////             All click events are defined below
-    //////////////////////////////////////////////////////////////////////////
-    // werkenbijggzfriesland slogan click event
-    eventWerkenBijGGZ = new EventsControls(camera,  renderer.domElement);
-    eventWerkenBijGGZ.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.location.href = "https://www.werkenbijggzfriesland.nl/";
-    })
-
-    // website click event
-    eventGGZFriesland = new EventsControls(camera,  renderer.domElement);
-    eventGGZFriesland.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.location.href = "https://www.ggzfriesland.nl/";
-    })
-    // vacancy click event
-    eventVacancies = new EventsControls(camera,  renderer.domElement);
-    eventVacancies.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.location.href = "https://www.werkenbijggzfriesland.nl/vacatures";
-    })
-    // call click event
-    eventCall = new EventsControls(camera,  renderer.domElement);
-    eventCall.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.open("tel:+1234567890")
-    })
-    // message click event
-    eventMessage = new EventsControls(camera,  renderer.domElement);
-    eventMessage.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.location.href = "https://wa.me/${+1234567890}";
-    })
-    // mail click event
-    eventMail = new EventsControls(camera,  renderer.domElement);
-    eventMail.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.location.href='mailto:info@ggzfriesland.nl';
-    })
-    // location click event
-    eventLocation = new EventsControls(camera,  renderer.domElement);
-    eventLocation.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.open('https://www.google.com/maps?q=de+drie+dukatons+15+leeuwarden&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiJicfstbv2AhVD66QKHV71DroQ_AUoAXoECAEQAw'); return false;
-    })
-    // video click event
-    eventVideo = new EventsControls(camera,  renderer.domElement);
-    eventVideo.attachEvent('onclick', function(){
-        console.log("clicked");
-        window.location.href = "https://www.youtube.com/watch?v=yHMVZc_swhg";
-    })
+   
 
     //////////////////////////////////////////////////////////////////////////
     ////             Define 3D Scene root and init image loader
@@ -272,6 +219,11 @@
     //init planes with small functional icons (phonenumber, mail, etc.)
     function createCommsIcons(){
         //create the planes needed for the meshes
+        //////////////////////////////////////////////////////////////////////////
+        ////             Init 3D model
+        //////////////////////////////////////////////////////////////////////////
+        
+
         //////////////////////////////////////////////////////////////////////////
         ////             Init small buttons (4)
         //////////////////////////////////////////////////////////////////////////
