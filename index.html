@@ -7,13 +7,13 @@
 
   <a-scene embedded arjs sourceType: webcam; sourceWidth:1920; sourceHeight: 1080; displayWidth: 1920; displayHeight: 1080;’>
     <!-- <a-asset-item id="model" src="models/Hologram_Plane.glb"></a-asset-item> -->
-
+    <a-entity camera></a-entity>
     <a-marker preset="hiro">
         <a-entity 
         scale="5 5 5" 
         position="0 1 0" 
         rotation="0 -90 0"
-        gltf-model="models/Smart_plate_v5.glb">
+        gltf-model="models/Smart plate v6.glb">
         </a-entity>
 
 
@@ -21,9 +21,5 @@
     <!-- define a camera which will move according to the marker position -->
     </a-marker>
 
-    <a-entity camera='near: 0.1; far: 1000;'
-    arjs-look-controls='smoothingFactor: 0.1'
-    rotation-reader>
-    </a-entity>
   </a-scene>
 </body>
