@@ -7,13 +7,13 @@
 
   <a-scene embedded arjs sourceType: webcam; sourceWidth:1920; sourceHeight: 1080; displayWidth: 1920; displayHeight: 1080;’>
     <!-- <a-asset-item id="model" src="models/Hologram_Plane.glb"></a-asset-item> -->
-    <a-entity camera></a-entity>
+    <a-entity camera arjs-look-controls='smoothingFactor: 0.1'></a-entity>
     <a-marker preset="hiro">
         <a-entity 
-        scale="5 5 5" 
+        scale="6 6 6" 
         position="0 1 0" 
         rotation="0 -90 0"
-        gltf-model="models/Smart plate v6.glb">
+        gltf-model="models/Smart plate v7.glb">
         </a-entity>
 
 
